@@ -3,9 +3,18 @@ import React from 'react';
 
 const Home = () => {
     return (
+      <div>
+        <h1>THIS IS A TEST</h1>
         <div>
-            <h1>THIS IS A TEST</h1>
+          <p>So you think you know dogs?</p>
         </div>
+        <div>
+          <p>You can't buy love but you can rescue love!</p>
+        </div>
+        <div>
+          <p>Did you know people live longer and happier with pets?</p>
+        </div>
+      </div>
     );
 };
 
