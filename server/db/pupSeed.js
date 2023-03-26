@@ -2,7 +2,22 @@ const Pup = require("./Pup");
 
 const pupSeed = async() => {
   
-  const [tarn, freyaLynn, dewey, maximilianAugustine, tinyTico, dixie, bella, bobby, ruger] = await Promise.all([
+  const [
+    tarn,
+    freyaLynn,
+    dewey,
+    maximilianAugustine,
+    tinyTico,
+    dixie,
+    bella,
+    bobby,
+    ruger,
+    dexter,
+    cass,
+    poe,
+    taterTot,
+    willowDaenerys,
+  ] = await Promise.all([
     Pup.create({
       name: "Tarn",
       description: "Self-proclaimed king of all dogs",
@@ -111,104 +126,90 @@ const pupSeed = async() => {
       ],
       image: "...",
     }),
-    Pup.create({}),
-    Pup.create({}),
+    Pup.create({
+      name: "Dexter",
+      description: "Best dog ever chilled out since he was a puppy giant.",
+      breed: "Cane Corso + Mastiff + Saint Bernard",
+      choices: [
+        "Mastiff + Leonberger + Rhodesian Ridgeback",
+        "Saint Bernard + Boxer + Cane Corso",
+        "Cangal + Caucasia Shepherd + English Labrador Retriever",
+      ],
+      image: "...",
+    }),
+    Pup.create({
+      name: "Cass",
+      description: "Floppy, medium sized ears",
+      breed: "Labrador Retriever + Rottweiler + American Pit Bull Terrier",
+      choices: [
+        "Chesapeake Bay Retriever + Labrador Retriever + Doberman + German Shepherd",
+        "Golden Retriever + Rotteweiler + Great Dane",
+        "Labrador Retriever + Belgian Malinois + Boxer + Australian Cattle Dog",
+      ],
+      image: "...",
+    }),
+    Pup.create({
+      name: "Poe",
+      description: "He bays like a hound!",
+      breed:
+        "Great Pyrenees + American Bully + American StaffordShire Terrier",
+      choices: [
+        "Treeing Walker Coonhound + Cangal + American Pit Bull Terrier",
+        "Dalmatian + American Bully + Siberian Husky",
+        "Golden Retriever + English Fox hound + Samoyed + Beagle",
+      ],
+      image: "...",
+    }),
+    Pup.create({
+      name: "Tater Tot",
+      description: "Tater Tot is a giant snuggle-bug!",
+      breed:
+        "Labrador Retriever + American Pit Bull Terrier + American Foxhound + Australian Cattle Dog",
+      choices: [
+        "Labrador Retriever + Shiba Inu + Poodle",
+        "German Shepherd + Beagle + American Pit Bull Terrier",
+        "Border Collie + Shitzu + Boxer + Maltese",
+      ],
+      image: "...",
+    }),
+    Pup.create({
+      name: "Willow Daenerys",
+      description:
+        "Willow is so sweet, and afraid of everything (the stove, thunder, loud noises, bugs)",
+      breed: "Chihuahua + Poodle + Pug + Miniature Pinscher",
+      choices: ["Beagle + Chihuahua + Pug", "Wippet + Shitzu + French Bulldog + Maltese",
+          "Brussels Griffon + Yorkshire Terrier + Corgi"],
+      image: "...",
+    }),
+    // Pup.create({}),
+    // Pup.create({}),
   ]);
   
-  const seed = [
-
-      {
-        name: "Dexter",
-        description: "Best dog ever chilled out since he was a puppy giant.",
-        breed: "Cane Corso + Mastiff + Saint Bernard",
-        choices: [
-          "Mastiff + Leonberger + Rhodesian Ridgeback",
-          "Saint Bernard + Boxer + Cane Corso",
-          "Cangal + Caucasia Shepherd + English Labrador Retriever",
-        ],
-        image: "...",
-      },
-      {
-        name: "Cass",
-        description: "Floppy, medium sized ears",
-        breed: "Labrador Retriever + Rottweiler + American Pit Bull Terrier",
-        choices: [
-          "Chesapeake Bay Retriever + Labrador Retriever + Doberman + German Shepherd",
-          "Golden Retriever + Rotteweiler + Great Dane",
-          "Labrador Retriever + Belgian Malinois + Boxer + Australian Cattle Dog",
-        ],
-        image: "...",
-      },
-      {
-        name: "Poe",
-        description: "He bays like a hound!",
-        breed:
-          "Great Pyrenees + American Bully + American StaffordShire Terrier",
-        choices: [
-          "Treeing Walker Coonhound + Cangal + American Pit Bull Terrier",
-          "Dalmatian + American Bully + Siberian Husky",
-          "Golden Retriever + English Fox hound + Samoyed + Beagle",
-        ],
-        image: "...",
-      },
-      {
-        name: "Tater Tot",
-        description: "Tater Tot is a giant snuggle-bug!",
-        breed:
-          "Labrador Retriever + American Pit Bull Terrier + American Foxhound + Australian Cattle Dog",
-        choices: [
-          "Labrador Retriever + Shiba Inu + Poodle",
-          "German Shepherd + Beagle + American Pit Bull Terrier",
-          "Border Collie + Shitzu + Boxer + Maltese",
-        ],
-        image: "...",
-      },
-      {
-        name: "Willow Daenerys",
-        description:
-          "Willow is so sweet, and afraid of everything (the stove, thunder, loud noises, bugs)",
-        breed: "Chihuahua + Poodle + Pug + Miniature Pinscher",
-        choices: ["Beagle + Chihuahua + Pug", "Wippet + Shitzu + French Bulldog + Maltese",
-            "Brussels Griffon + Yorkshire Terrier + Corgi"],
-        image: "...",
-      },
-      {
-        name: "",
-        description: "",
-        breed: "",
-        choices: [],
-        image: "...",
-      },
-      {
-        name: "",
-        description: "",
-        breed: "",
-        choices: [],
-        image: "...",
-      },
-      {
-        name: "",
-        description: "",
-        breed: "",
-        choices: [],
-        image: "...",
-      },
-      {
-        name: "",
-        description: "",
-        breed: "",
-        choices: [],
-        image: "...",
-      },
-      {
-        name: "",
-        description: "",
-        breed: "",
-        choices: [],
-        image: "...",
-      },
-    ];
-
-}
+      // {
+      //   name: "",
+      //   description: "",
+      //   breed: "",
+      //   choices: [],
+      //   image: "...",
+      // }
+      return {
+        pups: {
+           tarn,
+           freyaLynn,
+           dewey,
+           maximilianAugustine,
+           tinyTico,
+           dixie,
+           bella,
+           bobby,
+           ruger,
+           dexter,
+           cass,
+           poe,
+           taterTot,
+           willowDaenerys,
+         },
+      };
+};
 
 module.exports = pupSeed;
