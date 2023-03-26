@@ -1,15 +1,13 @@
 # DOGGLE PROJECT 
 
-## Getting started
+- This project was created to familiarize people with mixed breeds and the idea of adoption
+- I've reached out to number of reddit users in DoggyDNA subreddit to gather data
+- Play the quiz and see how friendly, cute and loyal rescued dogs can be!
+- You can't buy love but you can rescue love :)
 
-1. Fork and clone this repo.
-2. `npm install`.
-3. `npm run start`
+## Initial Planning
 
-## Details
-
-### The Premise
-
+<img src="./public/doggle.png">
 
 
 ### The tools
