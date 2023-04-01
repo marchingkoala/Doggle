@@ -24,10 +24,11 @@ const pupSeed = async() => {
       breed: "Jindo + Chowchow",
       choices: [
         "Shiba + Husky + Pitbull",
+        "Jindo + Chowchow",
         "Chowchow + Husky + Pitbull",
         "Dingo + California Dog",
       ],
-      image: "../public/pupPhotos/Tarn.jpg",
+      image: "/pupPhotos/Tarn.jpeg",
     }),
     Pup.create({
       name: "Freya Lynn",
@@ -35,11 +36,12 @@ const pupSeed = async() => {
       breed:
         "American Pit Bull Terrier + American Bully + American Staffordshire Terrier",
       choices: [
+        "American Pit Bull Terrier + American Bully + American Staffordshire Terrier",
         "Labrador Retriever + American Pit Bull Terrier + French Bulldog",
         "Dachshund + American Pit Bull Terrier + Pug",
         "American Pit Bull Terrier + Pug + Beagle",
       ],
-      image: "...",
+      image: "/pupPhotos/Freya_lynn.jpeg",
     }),
     Pup.create({
       name: "Dewey",
@@ -50,8 +52,9 @@ const pupSeed = async() => {
         "Boston Terrier + American Pit Bull Terrier + Austrailian Shepherd",
         "American Pit Bull Terrier + French Bulldog + Mountain Cur + Rottweiler",
         "Rhodesian Ridgeback + American Pit Bull Terrier + Chihuahua",
+        "Boston Terrier + Mountain Cur + Bluetick Coonhound + American English Coonhound",
       ],
-      image: "...",
+      image: "/pupPhotos/Dewey.jpeg",
     }),
     Pup.create({
       name: "Maximilian Augustine",
@@ -59,11 +62,12 @@ const pupSeed = async() => {
       breed:
         "Siberian Husky + American Pit Bull Terrier + American Bully + Rottweiler",
       choices: [
+        "Siberian Husky + American Pit Bull Terrier + American Bully + Rottweiler",
         "German Shepherd + Siberian Husky + American Pit Bull Terrier + Mountain Cur",
         "Siberian Husky + Golden Retriever + Beagle + Poodle",
         "American Pit Bull Terrier + Golden Retriever + German Shepherd + Samoyed",
       ],
-      image: "...",
+      image: "/pupPhotos/Maximillian.jpeg",
     }),
     Pup.create({
       name: "Tiny Tico",
@@ -72,9 +76,10 @@ const pupSeed = async() => {
       choices: [
         "Chihuahua + Wheaten Terrier + Maltese ",
         "Yorkshire Terrier + Maltese + Corgi + Lhasa Apso",
+        "Chihuahua + Yorkshire Terrier + Lhasa Apso + Cocker Spaniel",
         "Pomeranian + Bichon Frise + Papillon + Toy Poodle",
       ],
-      image: "...",
+      image: "/pupPhotos/Tiny_Tico.jpeg",
     }),
     Pup.create({
       name: "Dixie",
@@ -85,9 +90,10 @@ const pupSeed = async() => {
       choices: [
         "American Pit Bull Terrier + English Pointer + Chowchow",
         "American Bulldog + White Swiss Shepherd Dog + Labrador Retriever + Shihtzu",
+        "American Pit Bull Terrier + American Staffordshire Terrier + American Bulldog + Boxer",
         "Dogo Argentino + Boxer + Bull Terrier + Poodle",
       ],
-      image: "...",
+      image: "/pupPhotos/dixie.png",
     }),
     Pup.create({
       name: "Bella",
@@ -96,10 +102,11 @@ const pupSeed = async() => {
       breed: "Australian Cattle Dog + Beagle + Chihuahua + Chow Chow",
       choices: [
         "Labrador Retriever + American Pit Bull Terrier + Jack Russel Terrier",
+        "Australian Cattle Dog + Beagle + Chihuahua + Chow Chow",
         "Australian Cattle Dog + Akita + Border Collie + Beagle",
         "Jindo + Chihuahua + Rhodesian Ridgeback + Pug",
       ],
-      image: "...",
+      image: "/pupPhotos/Bella.png",
     }),
     Pup.create({
       name: "Bobby",
@@ -108,11 +115,12 @@ const pupSeed = async() => {
       breed:
         "Alaskan Malamute + Rottweiler + German Shepherd Dog + Australian Cattle Dog",
       choices: [
+        "Alaskan Malamute + Rottweiler + German Shepherd Dog + Australian Cattle Dog",
         "Australian Cattle Dog + Siberian Husky + Jack Russel Terrier",
         "Border Collie + Jack Russel Terrier + Corgi + Alaskan Klee Kai",
         "Canaan Dog + Smooth Fox Terrier + American Pit Bull Terrier",
       ],
-      image: "...",
+      image: "/pupPhotos/Bobby.jpeg",
     }),
     Pup.create({
       name: "Ruger",
@@ -120,45 +128,48 @@ const pupSeed = async() => {
         "He is a goofy dog but has a good head on his shoulders sometimes!",
       breed: "German Shepherd + Unresolved",
       choices: [
+        "German Shepherd + Unresolved",
         "Australian Kelpie + Rough Collie + Dingo",
         "German Shepherd + Welsh Corgi + Beauceron + Labrador Retriever",
         "Golden Retriever + German Shepherd + Rough Collie",
       ],
-      image: "...",
+      image: "/pupPhotos/Ruger.jpeg",
     }),
     Pup.create({
       name: "Dexter",
-      description: "Best dog ever chilled out since he was a puppy giant.",
+      description: "Best dog ever! Chilled out since he was a puppy giant.",
       breed: "Cane Corso + Mastiff + Saint Bernard",
       choices: [
         "Mastiff + Leonberger + Rhodesian Ridgeback",
         "Saint Bernard + Boxer + Cane Corso",
+        "Cane Corso + Mastiff + Saint Bernard",
         "Cangal + Caucasia Shepherd + English Labrador Retriever",
       ],
-      image: "...",
+      image: "/pupPhotos/Dexter.jpeg",
     }),
     Pup.create({
       name: "Cass",
       description: "Floppy, medium sized ears",
       breed: "Labrador Retriever + Rottweiler + American Pit Bull Terrier",
       choices: [
+        "Labrador Retriever + Rottweiler + American Pit Bull Terrier",
         "Chesapeake Bay Retriever + Labrador Retriever + Doberman + German Shepherd",
         "Golden Retriever + Rotteweiler + Great Dane",
         "Labrador Retriever + Belgian Malinois + Boxer + Australian Cattle Dog",
       ],
-      image: "...",
+      image: "/pupPhotos/Cass.jpeg",
     }),
     Pup.create({
       name: "Poe",
       description: "He bays like a hound!",
-      breed:
-        "Great Pyrenees + American Bully + American StaffordShire Terrier",
+      breed: "Great Pyrenees + American Bully + American StaffordShire Terrier",
       choices: [
         "Treeing Walker Coonhound + Cangal + American Pit Bull Terrier",
         "Dalmatian + American Bully + Siberian Husky",
         "Golden Retriever + English Fox hound + Samoyed + Beagle",
+        "Great Pyrenees + American Bully + American StaffordShire Terrier",
       ],
-      image: "...",
+      image: "/pupPhotos/Poe.jpeg",
     }),
     Pup.create({
       name: "Tater Tot",
@@ -167,22 +178,25 @@ const pupSeed = async() => {
         "Labrador Retriever + American Pit Bull Terrier + American Foxhound + Australian Cattle Dog",
       choices: [
         "Labrador Retriever + Shiba Inu + Poodle",
+        "Labrador Retriever + American Pit Bull Terrier + American Foxhound + Australian Cattle Dog",
         "German Shepherd + Beagle + American Pit Bull Terrier",
         "Border Collie + Shitzu + Boxer + Maltese",
       ],
-      image: "...",
+      image: "/pupPhotos/tater_tot.jpeg",
     }),
     Pup.create({
       name: "Willow Daenerys",
       description:
         "Willow is so sweet, and afraid of everything (the stove, thunder, loud noises, bugs)",
       breed: "Chihuahua + Poodle + Pug + Miniature Pinscher",
-      choices: ["Beagle + Chihuahua + Pug", "Wippet + Shitzu + French Bulldog + Maltese",
-          "Brussels Griffon + Yorkshire Terrier + Corgi"],
-      image: "...",
+      choices: [
+        "Chihuahua + Poodle + Pug + Miniature Pinscher",
+        "Beagle + Chihuahua + Pug",
+        "Wippet + Shitzu + French Bulldog + Maltese",
+        "Brussels Griffon + Yorkshire Terrier + Corgi",
+      ],
+      image: "/pupPhotos/Willow.jpeg",
     }),
-    // Pup.create({}),
-    // Pup.create({}),
   ]);
   
       // {
