@@ -1,7 +1,11 @@
 import React from 'react';
 
+const Home = ({loading}) => {
 
-const Home = () => {
+    if (loading) {
+      return <div>loading</div>;
+    }
+
     return (
       <div>
         <h1>THIS IS A TEST</h1>
