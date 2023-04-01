@@ -5,7 +5,9 @@ const { Pup, Result } = require("../db");
 //Get - /api/pups -> get all pup data
 router.get("/", async ( req,res,next) => {
     try {
-        const allPups = await Pup.findAll();
+        const allPups = await Pup.findAll({
+            include: [Result]
+        });
         res.send(allPups)
     } catch (error) {
         next(error);
@@ -25,18 +27,16 @@ router.get("/:id", async ( req, res, next)=>{
     }
 })
 
-//Get - /api/pups/totalNumber -> get a total number of registered pups
-router.get("/totalNumber", async (req,res,next)=>{
-    try {
-        const allPups = await Pup.findAll();
-        const totalNumber = allPups.length;
-        console.log("THIS IS A TEST FOR TOTAL NUMBER")
-        console.log(allPups);
-        console.log(totalNumber);
-        res.send(totalNumber);
-    } catch (error) {
-        next(error);
-    }
-})
+//Get - /api/pups/total -> get a total number of registered pups
+router.get("/total", async (req, res, next) => {
+  try {
+    const result = await Pup.findAll({
+      include: [Result],
+    });
+    res.send(result);
+  } catch (error) {
+    next(error);
+  }
+});
 
 module.exports = router
