@@ -8,7 +8,7 @@ import Result from './Result';
 
 const App = () => {
 
-    let [pups, setPups] = useState([]);
+    // let [pups, setPups] = useState([]);
     let [quizPup, setQuizPup] = useState({});
     let [total, setTotal] = useState(0);
     let [loading, setLoading] = useState(true);
@@ -16,10 +16,9 @@ const App = () => {
 
     const pupHandler = async () => {
       let { data } = await axios.get("/api/pups");
-      setPups(data);
+      // setPups(data);
       setTotal(data.length);
       setLoading(false);
-      console.log(data);
     };
 
     useEffect(() => {
