@@ -38,7 +38,6 @@ const Quiz = ({
   // navigate the user to the result page when they click the submit button
   const handerSubmit = (event) => {
     event.preventDefault();
-    console.log(selectedAnswer);
     navigate("/result");
   };
 
