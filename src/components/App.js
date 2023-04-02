@@ -9,8 +9,10 @@ import Result from './Result';
 const App = () => {
 
     let [pups, setPups] = useState([]);
+    let [quizPup, setQuizPup] = useState({});
     let [total, setTotal] = useState(0);
     let [loading, setLoading] = useState(true);
+    let [selectedAnswer, setSelectedAnswer] = useState("");
 
     const pupHandler = async () => {
       let { data } = await axios.get("/api/pups");
@@ -37,8 +39,24 @@ const App = () => {
         </nav>
         <Routes>
           <Route path="/" element={<Home loading={loading} />}></Route>
-          <Route path="/quiz" element={<Quiz total={total} />}></Route>
-          <Route path="/result" element={<Result />}></Route>
+          <Route
+            path="/quiz"
+            element={
+              <Quiz
+                total={total}
+                quizPup={quizPup}
+                setQuizPup={setQuizPup}
+                selectedAnswer={selectedAnswer}
+                setSelectedAnswer={setSelectedAnswer}
+              />
+            }
+          ></Route>
+          <Route
+            path="/result"
+            element={
+              <Result selectedAnswer={selectedAnswer} quizPup={quizPup} />
+            }
+          ></Route>
         </Routes>
         <div>
           <h2>THIS IS WHERE FOOTER WILL GO</h2>
