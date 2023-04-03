@@ -3,7 +3,11 @@ import { Link, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Quiz from './Quiz/Quiz';
 import axios from 'axios';
-import Result from './Result';
+import Result from './Result/Result';
+import Adopt from './Adopt/Adopt';
+import About from './About/About';
+import Resource from './Resource/Resource';
+import Contact from './Contact/Contact';
 
 
 const App = () => {
@@ -34,10 +38,15 @@ const App = () => {
         <h1>DOGGLE!</h1>
         <nav>
           <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
           <Link to="/quiz">Quiz</Link>
+          <Link to="/adopt">Adopt</Link>
+          <Link to="resource">Resource</Link>
+          <Link to="/contact">Contact Us</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home loading={loading} />}></Route>
+          <Route path="/about" elemen={ <About/>}></Route>
           <Route
             path="/quiz"
             element={
@@ -56,6 +65,9 @@ const App = () => {
               <Result selectedAnswer={selectedAnswer} quizPup={quizPup} />
             }
           ></Route>
+          <Route path="/adopt" element={<Adopt />}></Route>
+          <Route path="/resource" element={<Resource/>}></Route>
+          <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
         <div>
           <h2>THIS IS WHERE FOOTER WILL GO</h2>

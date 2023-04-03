@@ -16,7 +16,11 @@ const Home = ({loading}) => {
           <p>You can't buy love but you can rescue love!</p>
         </div>
         <div>
-          <p>Did you know people live longer and happier with pets?</p>
+          <p>
+            "Everybody should have a shelter dog. It's good for the soul." –
+            Paul Shaffer, Canadian musician, composer, actor, author, and
+            comedian
+          </p>
         </div>
       </div>
     );
