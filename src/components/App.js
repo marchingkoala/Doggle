@@ -45,6 +45,7 @@ const App = () => {
             <Link to="resource">Resource</Link>
             <Link to="/contact">Contact Us</Link>
           </nav>
+          <img src="/Home_IMG/Paw.png" width="50px" height="auto" alt="paw print of a dog"/>
         </div>
         <Routes>
           <Route path="/" element={<Home loading={loading} />}></Route>
