@@ -8,7 +8,7 @@ import Adopt from './Adopt/Adopt';
 import About from './About/About';
 import Resource from './Resource/Resource';
 import Contact from './Contact/Contact';
-
+import "./home.css";
 
 const App = () => {
 
@@ -35,15 +35,17 @@ const App = () => {
 
     return (
       <div>
-        <h1>DOGGLE!</h1>
-        <nav>
-          <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
-          <Link to="/quiz">Quiz</Link>
-          <Link to="/adopt">Adopt</Link>
-          <Link to="resource">Resource</Link>
-          <Link to="/contact">Contact Us</Link>
-        </nav>
+        <div className='nav_area'>
+          <h1 className='app_title'>Fuzzle</h1>
+          <nav>
+            <Link to="/">Home</Link>
+            <Link to="/about">About Us</Link>
+            <Link to="/quiz">Quiz</Link>
+            <Link to="/adopt">Adopt</Link>
+            <Link to="resource">Resource</Link>
+            <Link to="/contact">Contact Us</Link>
+          </nav>
+        </div>
         <Routes>
           <Route path="/" element={<Home loading={loading} />}></Route>
           <Route path="/about" elemen={ <About/>}></Route>
