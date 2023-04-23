@@ -14,24 +14,24 @@ const resultSeed = async(pups) => {
       Result.create({
         answer:
           "American Pit Bull Terrier + American Bully + American Staffordshire Terrier",
-        resultImg: "...",
+        resultImg: "/result/freyalynn_result.jpg",
         pupId: pups.freyaLynn.id,
       }),
       Result.create({
         answer:
           "Boston Terrier + Mountain Cur + Bluetick Coonhound + American English Coonhound",
-        resultImg: "...",
+        resultImg: "/result/dewey_result.png",
         pupId: pups.dewey.id,
       }),
       Result.create({
         answer:
           "Siberian Husky + American Pit Bull Terrier + American Bully + Rottweiler",
-        resultImg: "...",
+        resultImg: "/result/max_result.png",
         pupId: pups.maximilianAugustine.id,
       }),
       Result.create({
         answer: "Chihuahua + Yorkshire Terrier + Lhasa Apso + Cocker Spaniel",
-        resultImg: "...",
+        resultImg: "/result/tiny_tico_result.png",
         pupId: pups.tinyTico.id,
       }),
       Result.create({
@@ -63,13 +63,13 @@ const resultSeed = async(pups) => {
       }),
       Result.create({
         answer: "Labrador Retriever + Rottweiler + American Pit Bull Terrier",
-        resultImg: "...",
+        resultImg: "/result/cass_result.png",
         pupId: pups.cass.id,
       }),
       Result.create({
         answer:
           "Great Pyrenees + American Bully + American StaffordShire Terrier",
-        resultImg: "...",
+        resultImg: "/result/poe_result.jpeg",
         pupId: pups.poe.id,
       }),
       Result.create({
@@ -82,6 +82,27 @@ const resultSeed = async(pups) => {
         answer: "Chihuahua + Poodle + Pug + Miniature Pinscher",
         resultImg: "/result/willow_result.jpg",
         pupId: pups.willowDaenerys.id,
+      }),
+      Result.create({
+        answer: "American Pit Bull Terrier + Boston Terrier",
+        resultImg: "/result/moose_result.png",
+        pupId: pups.moose.id,
+      }),
+      Result.create({
+        answer: "Chow Chow + Chihuahua + Rottweiler + Labrador Retriever",
+        resultImg: "/result/bailey_result.png",
+        pupId: pups.bailey.id,
+      }),
+      Result.create({
+        answer:
+          "American Foxhound + Beagle + Austrailian Shepherd + German Shepherd",
+        resultImg: "/result/molly_result.png",
+        pupId: pups.molly.id,
+      }),
+      Result.create({
+        answer: "Miniature Pinscher + Poodle + Chihuahua + Shih Tzu",
+        resultImg: "/result/buddy_result.png",
+        pupId: pups.buddy.id,
       }),
     ]);
 
