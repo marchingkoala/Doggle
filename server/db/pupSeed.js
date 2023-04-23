@@ -17,6 +17,10 @@ const pupSeed = async() => {
     poe,
     taterTot,
     willowDaenerys,
+    moose,
+    bailey,
+    molly,
+    buddy,
   ] = await Promise.all([
     Pup.create({
       name: "Tarn",
@@ -71,7 +75,7 @@ const pupSeed = async() => {
     }),
     Pup.create({
       name: "Tiny Tico",
-      description: "",
+      description: "He's a tiny 4lb guy who enjoys playing with big dogs!",
       breed: "Chihuahua + Yorkshire Terrier + Lhasa Apso + Cocker Spaniel",
       choices: [
         "Chihuahua + Wheaten Terrier + Maltese ",
@@ -111,7 +115,7 @@ const pupSeed = async() => {
     Pup.create({
       name: "Bobby",
       description:
-        "Bobby was a stray from the neighbouring Reservation. He's a happy-go-lucky guy!",
+        "He's a happy-go-lucky boy who wants to make friends with everyone",
       breed:
         "Alaskan Malamute + Rottweiler + German Shepherd Dog + Australian Cattle Dog",
       choices: [
@@ -197,6 +201,57 @@ const pupSeed = async() => {
       ],
       image: "/pupPhotos/Willow.jpeg",
     }),
+    Pup.create({
+      name: "Moose",
+      description: "He almost always finds a new stick on his walk",
+      breed: "American Pit Bull Terrier + Boston Terrier",
+      choices: [
+        "American Pit Bull Terrier + Boston Terrier",
+        "Labrador Retreiver + Chow Chow+ American Pit Bull Terrier",
+        "Chihuahua + German Shepherd + Siberian Husky",
+        "Rhodesian Ridgeback + Standard Poodle + Golden Retriever",
+      ],
+      image: "/pupPhotos/moose.jpeg",
+    }),
+    Pup.create({
+      name: "Bailey",
+      description: "She worked with prisoners in the FL state prison system",
+      breed: "Chow Chow + Chihuahua + Rottweiler + Labrador Retriever",
+      choices: [
+        "Austrailian Cattle Dog + Shiba Inu + Siberian Husky",
+        "Chow Chow + Chihuahua + Rottweiler + Labrador Retriever",
+        "Chihuahua + Shiba Inu + Border Collie + Supermutt",
+        "American Pit Bull Terrier + Standard Poodle + Siberian Husky",
+      ],
+      image: "/pupPhotos/bailey.jpeg",
+    }),
+    Pup.create({
+      name: "Molly",
+      description:
+        "She is a rescue from Soutern Virginia, found dumped with her brothers",
+      breed:
+        "American Foxhound + Beagle + Austrailian Shepherd + German Shepherd",
+      choices: [
+        "Golden Retriever + Maltese + Bichon Frise",
+        "Saluki + Beagle + English Setter + American Pit Bull Terrier",
+        "American Foxhound + Beagle + Austrailian Shepherd + German Shepherd",
+        "German Shepherd + English Pointer + Chow Chow",
+      ],
+      image: "/pupPhotos/molly.png",
+    }),
+    Pup.create({
+      name: "Buddy",
+      description:
+        "He is a sato street dog from Puerto Rico found with one working eye",
+      breed: "Miniature Pinscher + Poodle + Chihuahua + Shih Tzu",
+      choices: [
+        "Miniature Pinscher + Poodle + Chihuahua + Shih Tzu",
+        "White Terrier + Maltese + Welsh Corgi + Pug",
+        "Yorshire Terrier + Jack Russel Terrier + Chihuahua",
+        "Beagle + American Pit Bull Terrier + Siberian Husky"
+      ],
+      image: "/pupPhotos/buddy.png",
+    }),
   ]);
   
       // {
@@ -222,6 +277,10 @@ const pupSeed = async() => {
            poe,
            taterTot,
            willowDaenerys,
+           moose,
+           bailey,
+           molly,
+           buddy,
          },
       };
 };
