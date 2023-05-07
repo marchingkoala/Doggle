@@ -50,9 +50,9 @@ const Quiz = ({
   }
 
   return (
-    <div>
-      <h2>QUIZ!!</h2>
-      <p>Guess the breed!</p>
+    <div className="quiz_body">
+      <h2>Guess the breed!</h2>
+      <p>What do you think the top 4 breeds are?</p>
       <img
         src={quizPup.image}
         alt="image of mixed breed dog"
