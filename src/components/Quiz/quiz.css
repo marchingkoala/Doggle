@@ -1,0 +1,30 @@
+.quiz_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz_body h2 {
+    color: rgb(4, 29, 60);
+    font-family: 'Chewy', cursive;
+    font-size: 45pt;
+    margin-top: 20px;
+}
+
+.quiz_body p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    margin-top: 20px;
+}
+
+.pupImage {
+    margin-top: 20px;
+}
+
+.multipleChoices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
