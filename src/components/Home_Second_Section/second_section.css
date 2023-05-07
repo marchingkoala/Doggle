@@ -1,0 +1,42 @@
+.home_second_section{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 213, 207);;
+}
+.second_section_bgwrapper{
+    background-color: rgb(4, 29, 60);
+}
+.home_second_section_text {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.home_second_section_text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16pt;
+    color: rgb(233, 242, 246);
+}
+
+.home_second_section_content{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.benji_profile{
+    margin-right: 30px;
+}
+
+.benji_profile p{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 20pt;
+}
