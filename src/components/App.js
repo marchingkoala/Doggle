@@ -50,7 +50,7 @@ const App = () => {
         </div>
         <Routes>
           <Route path="/" element={<Home loading={loading} />}></Route>
-          <Route path="/about" elemen={ <About/>}></Route>
+          <Route path="/about" element={ <About/>}></Route>
           <Route
             path="/quiz"
             element={
