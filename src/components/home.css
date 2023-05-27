@@ -5,6 +5,15 @@
     justify-content: space-evenly;
 }
 
+.nav_area img {
+    transition: transform 1s;
+}
+
+.nav_area img:hover{
+    transform: rotate(45deg);
+    transition: transform 1s;
+}
+
 .app_title {
     color: rgb(4, 29, 60);
     font-family: 'Chewy', cursive;
@@ -58,4 +67,10 @@ a {
     color: rgb(4, 29, 60);
     font-family: 'Chewy', cursive;
     font-size: 45pt;
+    margin-bottom: 20px;
+}
+
+.first_section_description p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import './result.css'
 
 const Result = ({ quizPup, selectedAnswer }) => {
   let [loading, setLoading] = useState(true);
@@ -20,20 +21,22 @@ const Result = ({ quizPup, selectedAnswer }) => {
   }
 
   return (
-    <div>
-      <h1>RESULT GOES HERE</h1>
-      <p>{quizPup.name}</p>
-      <p>
-        Your answer is: {useAnswer === quizPup.breed ? "correct" : "incorrect"}
-      </p>
-      <p>{quizPup.name} is {quizPup.breed}!</p>
+    <div className="result_container">
+      <h1>The moment of Truth!</h1>
+      <div className="pup_result">
+        <p>
+          {useAnswer === quizPup.breed
+            ? "You got me right!"
+            : "Haha! You got it wrong!"}
+        </p>
+        <p>I am {quizPup.breed}!</p>
+      </div>
       <img
         src={quizPup.image}
         alt="beautiful mixed breed pup"
         width="500"
         height="auto"
       />
-      <p className="pupDescript">{quizPup.descript}</p>
       <button onClick={() => navigate("/quiz")}>Play Again!</button>
     </div>
   );

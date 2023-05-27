@@ -21,6 +21,8 @@ const Home = ({loading}) => {
         <div className="home_first_section">
           <div className="first_section_description">
             <h2>So you think you know dogs?</h2>
+            <p>Sure, you can know your dog breeds...</p>
+            <p>but can you guess them right when they are mixed?</p>
             <button onClick={navigator}>Take the Quiz</button>
           </div>
           <img
@@ -32,8 +34,7 @@ const Home = ({loading}) => {
         </div>
 
         <Second_section />
-        <Third_section />
-
+        {/* <Third_section /> */}
       </div>
     );
 };

@@ -52,7 +52,7 @@ const Quiz = ({
   return (
     <div className="quiz_body">
       <h2>Guess the breed!</h2>
-      <p>What do you think the top 4 breeds are?</p>
+      <p className="pupSays">What do you think my top 4 breeds are?</p>
       <img
         src={quizPup.image}
         alt="image of mixed breed dog"
@@ -60,14 +60,22 @@ const Quiz = ({
         width="500px"
         height="auto"
       />
-      <p className="pupName">Name: {quizPup.name}</p>
+      <p className="pupSays">Hi! My name is {quizPup.name}!</p>
+      <p className="pupDescription">{quizPup.name}'s human says...</p>
       <p className="pupDescription">"{quizPup.description}"</p>
       <div className="multipleChoices">
-        <form onSubmit={handerSubmit}>
-          <h2>Take your pick!</h2>
+        <form
+          onSubmit={handerSubmit}
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          <h2 style={{ textAlign: "center" }}>Take your pick!</h2>
           {quizPup.choices.map((breed, index) => {
             return (
-              <div key={index}>
+              <div className="quiz_choices" key={index}>
                 <label className="checkboxOptionLabel">
                   <input
                     type="checkbox"

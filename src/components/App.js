@@ -9,6 +9,7 @@ import About from './About/About';
 import Resource from './Resource/Resource';
 import Contact from './Contact/Contact';
 import "./home.css";
+import Footer from './Footer/Footer';
 
 const App = () => {
 
@@ -72,9 +73,7 @@ const App = () => {
           <Route path="/resource" element={<Resource/>}></Route>
           <Route path="/contact" element={<Contact/>}></Route>
         </Routes>
-        <div>
-          <h2>THIS IS WHERE FOOTER WILL GO</h2>
-        </div>
+        <Footer />
       </div>
     );
 };
