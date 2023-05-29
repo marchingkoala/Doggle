@@ -60,6 +60,11 @@ const About = () => {
             Let's shower mixed breed pups with the love and attention they
             deserve!
           </p>
+          <br></br>
+          <p>
+            Best, <br />
+            Carm, Tarn and Sherman
+          </p>
         </div>
       </div>
     );
