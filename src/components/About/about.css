@@ -21,3 +21,18 @@
 .tarnAndMom {
     margin-top: 25px;
 }
+
+.about_paragraph {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about_paragraph p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14pt;
+    line-height: 1.8;
+}
