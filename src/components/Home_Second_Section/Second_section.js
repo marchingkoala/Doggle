@@ -1,7 +1,14 @@
 import React from 'react';
 import './second_section.css';
+import { useNavigate } from 'react-router-dom';
 
 const Second_section = () => {
+
+  const navigate = useNavigate();
+  const navigator = () => {
+    navigate("/adopt");
+  };
+
     return (
       <div className="home_second_section">
         <div className="second_section_bgwrapper">
@@ -36,15 +43,15 @@ const Second_section = () => {
                 alt="small mixed breed dog with ball in his mouth"
               />
             </div>
-            <div className='why_adopt_p'>
-            <p>
-              When it comes to adding a furry friend to your family, adopting a
-              mixed breed dog is a wonderful way to find a companion who will
-              love you unconditionally. Mixed breed dogs are often overlooked in
-              favor of purebred dogs, but they have just as much love and
-              affection to give!
-            </p>
-            <button>Why Adopt?</button>
+            <div className="why_adopt_p">
+              <p>
+                When it comes to adding a furry friend to your family, adopting
+                a mixed breed dog is a wonderful way to find a companion who
+                will love you unconditionally. Mixed breed dogs are often
+                overlooked in favor of purebred dogs, but they have just as much
+                love and affection to give!
+              </p>
+              <button onClick={navigator}>Why Adopt?</button>
             </div>
           </div>
         </div>
