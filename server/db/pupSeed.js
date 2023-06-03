@@ -21,6 +21,18 @@ const pupSeed = async() => {
     bailey,
     molly,
     buddy,
+    atlas,
+    bambi,
+    bixbi,
+    blakely,
+    boone,
+    brutus,
+    champ,
+    daisy,
+    duke,
+    fala,
+    finley,
+    fiona,
   ] = await Promise.all([
     Pup.create({
       name: "Tarn",
@@ -248,9 +260,170 @@ const pupSeed = async() => {
         "Miniature Pinscher + Poodle + Chihuahua + Shih Tzu",
         "White Terrier + Maltese + Welsh Corgi + Pug",
         "Yorshire Terrier + Jack Russel Terrier + Chihuahua",
-        "Beagle + American Pit Bull Terrier + Siberian Husky"
+        "Beagle + American Pit Bull Terrier + Siberian Husky",
       ],
       image: "/pupPhotos/buddy.png",
+    }),
+    Pup.create({
+      name: "Atlas",
+      description: "Atlas barks at planes flying above our yard",
+      breed:
+        "American Staffordshire + American Pit Bull Terrier + Chow Chow + American Bulldog",
+      choices: [
+        "American Staffordshire + American Pit Bull Terrier + Chow Chow + American Bulldog",
+        "American Pit Bull Terrier + Labrador Retreiver + Beagle + English Pointer",
+        "Golden Retriever + American Pit Bull Terrier + Jack Russel Terrier + Chihuahua",
+        "Beagle + Labrador Retriever + Chiweenee + Pug",
+      ],
+      image: "/pupPhotos/Atlas.jpeg",
+    }),
+    Pup.create({
+      name: "Bambi",
+      description:
+        "A huge snuggle bug. She loves to clean her sister’s ears and tries to groom us as well",
+      breed:
+        "American Pit Bull Terrier + American Staffordshire + Chow Chow + Labrador Retriever",
+      choices: [
+        "Visla + Labrador Retriever + Pug + American Pit Bull Terrier",
+        "American Pit Bull Terrier + American Staffordshire + Chow Chow + Labrador Retriever",
+        "100% White Tail Deer",
+        "Boxer + Labrador Retriever + American Pit Bull Terrier + Chihuahua",
+      ],
+      image: "/pupPhotos/Bambi.jpeg",
+    }),
+    Pup.create({
+      name: "Bixbi",
+      description: "Performs inspections everywhere she goes",
+      breed: "Shih tzu + Poodle + Pekingese + Chihuahua",
+      choices: [
+        "Lhasa Apso + White Terrier + Pekingese + Maltese",
+        "Maltese + Bichon + Poodle + Pug",
+        "Shih tzu + Poodle + Pekingese + Chihuahua",
+        "100% Mythical creature from the wind mountain",
+      ],
+      image: "/pupPhotos/Bixbi.jpeg",
+    }),
+    Pup.create({
+      name: "Blakely",
+      description:
+        "Adopted from Dallas in 2013. She passed away recently but she was a very good girl",
+      breed:
+        "Siberian Husky + Chow Chow + American Pit Bull Terrier + Australian Cattle Dog",
+      choices: [
+        "Border Collie + Golden Retreiver + English Pointer + American Pit Bull Terrier",
+        "Siberian Husky + Chow Chow + American Pit Bull Terrier + Australian Cattle Dog",
+        "Blue Heeler + Australian Shepherd + Welsh Corgi + English Pointer",
+        "Chow Chow + Samoyed + French Bulldog + Maltese",
+      ],
+      image: "/pupPhotos/Blakely.jpg",
+    }),
+    Pup.create({
+      name: "Boone",
+      description:
+        "Good thing he wasn't destined for a working farm! He would have failed miserably",
+      breed:
+        "Border Collie + Australian Shepherd + Minuature American Shepherd + Australian Cattle Dog",
+      choices: [
+        "100% Australian Shepherd",
+        "Collie + German Shepherd + Chow Chow + English Sheepdog",
+        "Border Collie + Australian Shepherd + Minuature American Shepherd + Australian Cattle Dog",
+        "Golden Retriever + Australian Cattle Dog + Husky + Chow Chow",
+      ],
+      image: "/pupPhotos/Boone.jpg",
+    }),
+    Pup.create({
+      name: "Brutus",
+      description:
+        "His nickname is Brutey Pebbles because there are rocks where his brain should be!",
+      breed:
+        "American Bully + American Pit Bull Terrier + Boston Terrier + Bulldog",
+      choices: [
+        "100% American Pit Bull Terrier",
+        "American Bully + American Pit Bull Terrier + Boston Terrier + Bulldog",
+        "Bulldog + Labrador Retriever + French Terrier + Pug",
+        "Boxer + American Pit Bull Terrier + Pomeranian + Chihuahua",
+      ],
+      image: "/pupPhotos/Brutus.jpeg",
+    }),
+    Pup.create({
+      name: "Champ",
+      description: "100% good boy",
+      breed: "Labrador Retriever + Australian Cattle Dog + Border Collie",
+      choices: [
+        "Labrador Retriever + Australian Cattle Dog + Border Collie",
+        "Collie + German Shepherd + Chow Chow + English Sheepdog",
+        "Belgium Shepherd + Boxer + Australian Cattle Dog + American Pit Bull Terrier",
+        "Golden Retriever + Husky + Chow Chow + Belgium Malinois",
+      ],
+      image: "/pupPhotos/Champ.jpg",
+    }),
+    Pup.create({
+      name: "Daisy",
+      description:
+        "Daisy is the best little girl we could have ever asked for!",
+      breed: "Australian Shepherd + Golden Retriever + Mountain Cur + Bulldog",
+      choices: [
+        "Australian Shepherd + Golden Retriever + Mountain Cur + Bulldog",
+        "Labrador Retriever + German Shepherd",
+        "Australian Cattle Dog + Belgium Shepherd + Boxer",
+        "Labrador Retriever + American Pit Bull Terrier",
+      ],
+      image: "/pupPhotos/Daisy.jpeg",
+    }),
+    Pup.create({
+      name: "Duke",
+      description:
+        "Has the ego of a spoiled lap dog, excellent at puzzle solving and a nose that could put a bloodhound to shame.",
+      breed:
+        "American Pit Bull Terrier + Mountain Cur + Chow Chow + Australian Shepherd",
+      choices: [
+        "100% Chihuahua. (Duke just likes to hit the gym)",
+        "Mountain Cur + Labrador Retriever + Plott + Beagle",
+        "Australian Cattle Dog + Boxer + English Setter + Grey Hound",
+        "American Pit Bull Terrier + Mountain Cur + Chow Chow + Australian Shepherd",
+      ],
+      image: "/pupPhotos/Duke.jpeg",
+    }),
+    Pup.create({
+      name: "Fala",
+      description:
+        "She doesn’t know how to snuggle, and instead looms over us and often tries to pet us with her huge paws",
+      breed: "German Shepherd + Mountain Cur + Akita",
+      choices: [
+        "German Shepherd + Mountain Cur + Akita",
+        "Chow Chow + English Sheepdog + Poodle + Chihuahua",
+        "Labrador Retriever + Doberman + American Pit Bull Terrier + Yorkshire Terrier",
+        "Blue Heeler + Maltese + Welsh Corgi + Jindo",
+      ],
+      image: "/pupPhotos/Fala.jpeg",
+    }),
+    Pup.create({
+      name: "Finley",
+      description:
+        "Finley is the goodest, sweetest boy. He listens well and has good recall. This 60 pound giant is, also, afraid of blueberries",
+      breed:
+        "American Pit Bull Terrier + Treeing Walker Coonhound + Black Tan Coonhound + Labrador Retriever",
+      choices: [
+        "Boxer + American Pit Bull Terrier + Akita + German Sherpherd",
+        "Labrador Retriever + Pug + Beagle + Chow Chow",
+        "American Pit Bull Terrier + Treeing Walker Coonhound + Black Tan Coonhound + Labrador Retriever",
+        "Golden Retriever + Australian Cattle Dog + Husky + Chow Chow",
+      ],
+      image: "/pupPhotos/Finley.jpg",
+    }),
+    Pup.create({
+      name: "Fiona",
+      description:
+        "Fiona is an absolute ham. When she’s excited, her whole body wiggles. She wants your love and attention 24/7!",
+      breed:
+        "Treeing Walker Coonhound + American Pit Bull Terrier + Labrador Retriever + Black Tan Coonhound",
+      choices: [
+        "Treeing Walker Coonhound + American Pit Bull Terrier + Labrador Retriever + Black Tan Coonhound",
+        "Collie + German Shepherd + Chow Chow + English Sheepdog",
+        "Korean Jindo + Golden Retriever + Treeing Walker Coonhound + Doberman",
+        "Beagle + Pug + Chihuahua + Rhodesian Ridgeback",
+      ],
+      image: "/pupPhotos/Fiona.jpg",
     }),
   ]);
   
@@ -263,25 +436,37 @@ const pupSeed = async() => {
       // }
       return {
         pups: {
-           tarn,
-           freyaLynn,
-           dewey,
-           maximilianAugustine,
-           tinyTico,
-           dixie,
-           bella,
-           bobby,
-           ruger,
-           dexter,
-           cass,
-           poe,
-           taterTot,
-           willowDaenerys,
-           moose,
-           bailey,
-           molly,
-           buddy,
-         },
+          tarn,
+          freyaLynn,
+          dewey,
+          maximilianAugustine,
+          tinyTico,
+          dixie,
+          bella,
+          bobby,
+          ruger,
+          dexter,
+          cass,
+          poe,
+          taterTot,
+          willowDaenerys,
+          moose,
+          bailey,
+          molly,
+          buddy,
+          atlas,
+          bambi,
+          bixbi,
+          blakely,
+          boone,
+          brutus,
+          champ,
+          daisy,
+          duke,
+          fala,
+          finley,
+          fiona,
+        },
       };
 };
 

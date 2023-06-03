@@ -104,6 +104,75 @@ const resultSeed = async(pups) => {
         resultImg: "/result/buddy_result.png",
         pupId: pups.buddy.id,
       }),
+      Result.create({
+        answer:
+          "American Staffordshire + American Pit Bull Terrier + Chow Chow + American Bulldog",
+        resultImg: "/result/Atlas_result.jpg",
+        pupId: pups.atlas.id,
+      }),
+      Result.create({
+        answer:
+          "American Pit Bull Terrier + American Staffordshire + Chow Chow + Labrador Retriever",
+        resultImg: "/result/Bambi_result.jpeg",
+        pupId: pups.bambi.id,
+      }),
+      Result.create({
+        answer: "Shih tzu + Poodle + Pekingese + Chihuahua",
+        resultImg: "/result/Bixbi_result.jpg",
+        pupId: pups.bixbi.id,
+      }),
+      Result.create({
+        answer:
+          "Siberian Husky + Chow Chow + American Pit Bull Terrier + Australian Cattle Dog",
+        resultImg: "/result/Blakely_result.jpg",
+        pupId: pups.blakely.id,
+      }),
+      Result.create({
+        answer:
+          "Border Collie + Australian Shepherd + Minuature American Shepherd + Australian Cattle Dog",
+        resultImg: "/result/Boone_result.jpg",
+        pupId: pups.boone.id,
+      }),
+      Result.create({
+        answer:
+          "American Bully + American Pit Bull Terrier + Boston Terrier + Bulldog",
+        resultImg: "/result/Brutus_result.jpg",
+        pupId: pups.brutus.id,
+      }),
+      Result.create({
+        answer: "Labrador Retriever + Australian Cattle Dog + Border Collie",
+        resultImg: "/result/Champ_result.jpg",
+        pupId: pups.champ.id,
+      }),
+      Result.create({
+        answer:
+          "Australian Shepherd + Golden Retriever + Mountain Cur + Bulldog",
+        resultImg: "/result/Daisy_result.jpg",
+        pupId: pups.daisy.id,
+      }),
+      Result.create({
+        answer:
+          "American Pit Bull Terrier + Mountain Cur + Chow Chow + Australian Shepherd",
+        resultImg: "/result/Duke_result.jpg",
+        pupId: pups.duke.id,
+      }),
+      Result.create({
+        answer: "German Shepherd + Mountain Cur + Akita",
+        resultImg: "/result/Fala_result.jpeg",
+        pupId: pups.fala.id,
+      }),
+      Result.create({
+        answer:
+          "American Pit Bull Terrier + Treeing Walker Coonhound + Black Tan Coonhound + Labrador Retriever",
+        resultImg: "/result/Finley_result.jpg",
+        pupId: pups.finley.id,
+      }),
+      Result.create({
+        answer:
+          "Treeing Walker Coonhound + American Pit Bull Terrier + Labrador Retriever + Black Tan Coonhound",
+        resultImg: "/result/Fiona_result.jpg",
+        pupId: pups.fiona.id,
+      }),
     ]);
 
     console.log("DONE SEEDING RESULT")

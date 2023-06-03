@@ -2,8 +2,8 @@ import React from 'react';
 
 const Adopt = () => {
     return (
-        <div>
-            <h1>THIS IS FOR ADOPTION</h1>
+        <div className='adopt_container'>
+            <h1>Why Adopt?</h1>
         </div>
     );
 };
