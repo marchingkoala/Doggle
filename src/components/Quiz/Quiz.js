@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './quiz.css';
 
 
@@ -11,17 +11,35 @@ const Quiz = ({
   selectedAnswer,
   setSelectedAnswer,
 }) => {
-  // creates a random number which will be used as an id to call pup's data
-  let randomNum = Math.floor(Math.random() * total);
+
   let [loading, setLoading] = useState(true);
+  //to make sure the user never gets the same quiz again, 
+  //store previously generated numbers into the user's local storage
+  //this will persists across page refreshes
+  let [previousNums, setPreviousNums] = useState(
+    JSON.parse(localStorage.getItem("previousNums")) || []
+  );
   let navigate = useNavigate();
+
 
   // calls for random dog's data
   const quizPupHandler = async () => {
+    // creates a random number which will be used as an id to call pup's data
+    let randomNum;
+    do {
+      randomNum = Math.floor(Math.random() * total);
+    } while (previousNums.includes(randomNum));
+
     try {
       const pup = await axios.get(`/api/pups/${randomNum}`);
       setLoading(false);
       setQuizPup(pup.data);
+      //updating the number in local storage
+      setPreviousNums((prevNums) => {
+        const newNums = [...prevNums, randomNum];
+        localStorage.setItem("previousNums", JSON.stringify(newNums));
+        return newNums;
+      });
     } catch (error) {
       console.log(error.message);
     }
