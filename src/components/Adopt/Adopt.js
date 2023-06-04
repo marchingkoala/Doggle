@@ -51,6 +51,7 @@ const Adopt = () => {
             becomes the foundation for meaningful connections and a vibrant
             social network. We get to make friends, one bark at a time!
           </p>
+          <br></br>
           <p>
             Dog adoption is a journey that transcends the act of bringing a
             furry friend into your home. It's an opportunity to save lives,
