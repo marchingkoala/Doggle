@@ -1,7 +1,14 @@
 import React from 'react';
 import './adopt.css'
+import { useNavigate } from 'react-router-dom';
 
 const Adopt = () => {
+
+  const navigate = useNavigate();
+
+  const navigator = () =>{
+    window.open("https://www.petfinder.com/");
+  }  
 
     return (
       <div className="adopt_container">
@@ -12,7 +19,10 @@ const Adopt = () => {
           height="auto"
           alt="a collection of 8 adopted mixed breed dogs"
         />
-        <p className='adopted'>Molly, Bixbi, Brutus, Daisy, Duke, Minnie and Dexter found forever home</p>
+        <p className="adopted">
+          Molly, Bixbi, Brutus, Daisy, Duke, Minnie and Dexter found forever
+          home
+        </p>
         <br></br>
         <br></br>
         <div className="adopt_paragraph">
@@ -61,8 +71,8 @@ const Adopt = () => {
             make a positive impact on the life of a deserving furry friend.
           </p>
         </div>
-          <h1>Ready to adopt?</h1>
-        <button>Find me a friend!</button>
+        <h1>Ready to adopt?</h1>
+        <button onClick={navigator}>Find me a friend!</button>
       </div>
     );
 };
