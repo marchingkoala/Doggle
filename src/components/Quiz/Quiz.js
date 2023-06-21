@@ -17,7 +17,7 @@ const Quiz = ({
   //store previously generated numbers into the user's local storage
   //this will persists across page refreshes
   let [previousNums, setPreviousNums] = useState(
-    JSON.parse(localStorage.getItem("previousNums")) || []
+    JSON.parse(sessionStorage.getItem("previousNums")) || []
   );
   let navigate = useNavigate();
 
@@ -37,7 +37,7 @@ const Quiz = ({
       //updating the number in local storage
       setPreviousNums((prevNums) => {
         const newNums = [...prevNums, randomNum];
-        localStorage.setItem("previousNums", JSON.stringify(newNums));
+        sessionStorage.setItem("previousNums", JSON.stringify(newNums));
         return newNums;
       });
     } catch (error) {
