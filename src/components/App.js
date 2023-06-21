@@ -36,8 +36,8 @@ const App = () => {
 
     return (
       <div>
-        <div className='nav_area'>
-          <h1 className='app_title'>Fuzzle</h1>
+        <div className="nav_area">
+          <h1 className="app_title">Fuzzle</h1>
           <nav>
             <Link to="/">Home</Link>
             <Link to="/about">About Us</Link>
@@ -46,11 +46,16 @@ const App = () => {
             <Link to="resource">Resource</Link>
             <Link to="/contact">Contact Us</Link>
           </nav>
-          <img src="/Home_IMG/Paw.png" width="50px" height="auto" alt="paw print of a dog"/>
+          <img
+            src="/Home_IMG/Paw.png"
+            width="50px"
+            height="auto"
+            alt="paw print of a dog"
+          />
         </div>
         <Routes>
           <Route path="/" element={<Home loading={loading} />}></Route>
-          <Route path="/about" element={ <About/>}></Route>
+          <Route path="/about" element={<About />}></Route>
           <Route
             path="/quiz"
             element={
@@ -70,8 +75,8 @@ const App = () => {
             }
           ></Route>
           <Route path="/adopt" element={<Adopt />}></Route>
-          <Route path="/resource" element={<Resource/>}></Route>
-          <Route path="/contact" element={<Contact/>}></Route>
+          <Route path="/resource" element={<Resource />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
         </Routes>
         <Footer />
       </div>
