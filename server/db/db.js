@@ -6,5 +6,5 @@ const DB_URL = "postgres://localhost:5432/dogs";
 
 const db = new Sequelize(process.env.DATABASE_URL, config);
 
-
+//
 module.exports = db;
