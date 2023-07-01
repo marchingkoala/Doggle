@@ -33,6 +33,9 @@ const pupSeed = async() => {
     fala,
     finley,
     fiona,
+    Benji,
+    Meggle,
+    Sherman,
   ] = await Promise.all([
     Pup.create({
       name: "Tarn",
@@ -425,6 +428,45 @@ const pupSeed = async() => {
       ],
       image: "/pupPhotos/Fiona.jpg",
     }),
+    Pup.create({
+      name: "Benji",
+      description: "He has the most boopable nose and a glorious curtain tail!",
+      breed: "Chihuahua + Dachshund + Parson Russel Terrier + Bichon Frise",
+      choices: [
+        "Chihuahua + Dachshund + Parson Russel Terrier + Bichon Frise",
+        "Papillon + Jack Russel Terrier + Maltese + Yorkshire Terrier",
+        "Beagle + Jack Russel Terrier + Chihuahua + Welsh Corgi",
+        "The founding father",
+      ],
+      image: "/pupPhotos/benji.png",
+    }),
+    Pup.create({
+      name: "Meggle",
+      description: "She toots",
+      breed:
+        "Chow Chow + Russell type terrier + German Shepherd Dog + American Bulldog",
+      choices: [
+        "Golden Retriever + Labrador Retriever + Cocker Spaniel + Beagle",
+        "Fuzzy Jellybean Girl",
+        "Chow Chow + Russell type terrier + German Shepherd Dog + American Bulldog",
+        "Labrador Retriever + Golden Retriever + Samoyed + Yorkshire Terrier",
+      ],
+      image: "/pupPhotos/meggle.jpg",
+    }),
+    Pup.create({
+      name: "Sherman",
+      description:
+        "Sherman is a wiggly ham. All food must go to the Sherm for testing!",
+      breed:
+        "Labrador Retriever + Cocker Spaniel + Beagle + American Pitbull Terrier",
+      choices: [
+        "Australian Shepherd + English Setter + American Pitbull Terrier + Bichon Frise",
+        "A M4 tank used by United States in World War II",
+        "Labrador Retriever + Cocker Spaniel + Beagle + American Pitbull Terrier",
+        "Rotteweiler + Golden Retriever + Shitzu + Shiba Inu"
+      ],
+      image: "/pupPhotos/sherman.jpg",
+    }),
   ]);
   
       // {
@@ -466,6 +508,9 @@ const pupSeed = async() => {
           fala,
           finley,
           fiona,
+          Benji,
+          Meggle,
+          Sherman,
         },
       };
 };

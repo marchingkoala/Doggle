@@ -4,9 +4,10 @@
   "description": "A review time project",
   "main": "index.js",
   "scripts": {
-    "start": "npm run build-watch & npm run start-server ",
+    "dev": "npm run build-watch & npm run start-server ",
+    "start":"node server/index.js",
     "seed": "node server/db/seed.js",
-    "build-watch": "webpack -w",
+    "build-watch": "webpack",
     "start-server": "nodemon --watch server -e js,html server/index.js"
   },
   "keywords": [],
@@ -20,6 +21,7 @@
     "@mui/material": "^5.10.11",
     "@reduxjs/toolkit": "^1.8.1",
     "axios": "^0.27.2",
+    "cli": "^1.0.1",
     "cors": "^2.8.5",
     "css-loader": "^6.7.3",
     "deepl-node": "^1.8.0",

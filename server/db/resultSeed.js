@@ -173,6 +173,23 @@ const resultSeed = async(pups) => {
         resultImg: "/result/Fiona_result.jpg",
         pupId: pups.fiona.id,
       }),
+      Result.create({
+        answer: "Chihuahua + Dachshund + Parson Russel Terrier + Bichon Frise",
+        resultImg: "/result/benji_result.jpg",
+        pupId: pups.Benji.id,
+      }),
+      Result.create({
+        answer:
+          "Chow Chow + Russell type terrier + German Shepherd Dog + American Bulldog",
+        resultImg: "/result/meggle_result.jpg",
+        pupId: pups.Meggle.id,
+      }),
+      Result.create({
+        answer:
+          "Labrador Retriever + Cocker Spaniel + Beagle + American Pitbull Terrier",
+        resultImg: "/result/sherman_result.png",
+        pupId: pups.Sherman.id,
+      }),
     ]);
 
     console.log("DONE SEEDING RESULT")
