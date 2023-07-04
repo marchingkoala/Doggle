@@ -36,6 +36,8 @@ const pupSeed = async() => {
     Benji,
     Meggle,
     Sherman,
+    love,
+    murphy,
   ] = await Promise.all([
     Pup.create({
       name: "Tarn",
@@ -463,9 +465,35 @@ const pupSeed = async() => {
         "Australian Shepherd + English Setter + American Pitbull Terrier + Bichon Frise",
         "A M4 tank used by United States in World War II",
         "Labrador Retriever + Cocker Spaniel + Beagle + American Pitbull Terrier",
-        "Rotteweiler + Golden Retriever + Shitzu + Shiba Inu"
+        "Rotteweiler + Golden Retriever + Shitzu + Shiba Inu",
       ],
       image: "/pupPhotos/sherman.jpg",
+    }),
+    Pup.create({
+      name: "Love",
+      description: "Love is so perfect and full of love, literally!",
+      breed:
+        "American Pitbull Terrier + Border Colllie + Boston Terrier + Siberian Husky",
+      choices: [
+        "French Bulldog + Chihuahua + Beagle + Pomeranian",
+        "Venus, the Goddess of Love",
+        "American Pitbull Terrier + Border Colllie + Boston Terrier + Siberian Husky",
+        "Pug + French Bulldog + Shiba Inu + Samoyed",
+      ],
+      image: "/pupPhotos/love.jpg",
+    }),
+    Pup.create({
+      name: "Murphy",
+      description:
+        "Loves to do agility and has a coat that turns red in some sunlight!",
+      breed: "American Pitbull Terrier + German Shepherd + Collie + Rottweiler",
+      choices: [
+        "100% Border Collie",
+        "Australian Shepherd + Collie",
+        "American Pitbull Terrier + German Shepherd + Collie + Rottweiler",
+        "Chihuahua + Great Pyrenese + Golden Retreiver + unresolved",
+      ],
+      image: "/pupPhotos/murphy.jpeg",
     }),
   ]);
   
@@ -511,6 +539,8 @@ const pupSeed = async() => {
           Benji,
           Meggle,
           Sherman,
+          love,
+          murphy,
         },
       };
 };

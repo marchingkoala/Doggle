@@ -190,6 +190,18 @@ const resultSeed = async(pups) => {
         resultImg: "/result/sherman_result.png",
         pupId: pups.Sherman.id,
       }),
+      Result.create({
+        answer:
+          "American Pitbull Terrier + Border Colllie + Boston Terrier + Siberian Husky",
+        resultImg: "/result/love_result.jpg",
+        pupId: pups.love.id,
+      }),
+      Result.create({
+        answer:
+          "American Pitbull Terrier + German Shepherd + Collie + Rottweiler",
+        resultImg: "/result/murphy_result.png",
+        pupId: pups.Sherman.id,
+      }),
     ]);
 
     console.log("DONE SEEDING RESULT")
