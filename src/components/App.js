@@ -13,7 +13,6 @@ import Footer from './Footer/Footer';
 
 const App = () => {
 
-    // let [pups, setPups] = useState([]);
     let [quizPup, setQuizPup] = useState({});
     let [total, setTotal] = useState(0);
     let [loading, setLoading] = useState(true);
@@ -21,7 +20,6 @@ const App = () => {
 
     const pupHandler = async () => {
       let { data } = await axios.get("/api/pups");
-      // setPups(data);
       setTotal(data.length);
       setLoading(false);
     };
@@ -35,7 +33,7 @@ const App = () => {
     }
 
     return (
-      <div>
+      <div className='parent_app'>
         <div className="nav_area">
           <h1 className="app_title">Fuzzle</h1>
           <nav>
