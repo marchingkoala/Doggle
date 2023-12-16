@@ -24,6 +24,8 @@ const App = () => {
       setLoading(false);
     };
 
+
+
     useEffect(() => {
       pupHandler();
     }, []);
