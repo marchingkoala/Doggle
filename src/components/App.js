@@ -47,7 +47,7 @@ const App = () => {
             <Link to="/contact">Contact Us</Link>
           </nav>
           <img
-            src="/Home_IMG/Paw.png"
+            src="/Home_IMG/Paw.avif"
             width="50px"
             height="auto"
             alt="paw print of a dog"

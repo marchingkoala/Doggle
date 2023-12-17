@@ -32,6 +32,9 @@ const Home = ({loading}) => {
             width="250px"
             height="auto"
             alt="photo of a very cute jindo dog with his tongue out"
+            loading="lazy"
+            rel="preload"
+            as="image"
           />
         </div>
         <Suspense fallback={<div>Loading...</div>}>
