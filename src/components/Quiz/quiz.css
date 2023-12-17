@@ -57,3 +57,58 @@ form button {
     word-spacing: 5px;
     border: none;
 }
+
+@media only screen and (min-width:300px) and (max-width: 767px){
+.quiz_body h2 {
+    color: rgb(4, 29, 60);
+    font-family: 'Chewy', cursive;
+    font-size: 15pt;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.quiz_body {
+    margin-top: 0px;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.quiz_body p {
+    margin: 10px;
+}
+.pupSays {
+    font-size: 15pt;
+}
+
+.pupImage {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+}
+.pupDescription {
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+}
+
+.multipleChoices {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+form button {
+    width: 45%;
+    height: auto;
+    margin-top: 15px;
+    padding: 4px;
+    background-color: rgb(4, 29, 60);
+    color: white;
+    font-family: 'Chewy', cursive;
+    font-size: 15pt;
+    /* word-spacing: 2px; */
+    border: none;
+}
+}
