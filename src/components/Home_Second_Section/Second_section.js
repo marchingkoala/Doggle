@@ -37,7 +37,7 @@ const Second_section = () => {
               </div>
               <img
                 className="benji_photo"
-                src="/Home_IMG/benji.png"
+                src="/Home_IMG/benji.avif"
                 width="500px"
                 height="auto"
                 alt="small mixed breed dog with ball in his mouth"
