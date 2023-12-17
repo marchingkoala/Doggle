@@ -28,7 +28,7 @@ const Home = ({loading}) => {
             <button onClick={navigator}>Take the Quiz</button>
           </div>
           <img
-            src="/Home_IMG/Targle_front.png"
+            src="/Home_IMG/Targle_front.avif"
             width="250px"
             height="auto"
             alt="photo of a very cute jindo dog with his tongue out"
