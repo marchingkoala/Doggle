@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { lazy, Suspense} from 'react';
 import './home.css'
 import { useNavigate } from 'react-router-dom';
-import Second_section from './Home_Second_Section/Second_section';
-import Third_section from './Home_Third_Section/Third_section';
+// import Second_section from './Home_Second_Section/Second_section';
 
+const Second_section = lazy(() =>
+  import("./Home_Second_Section/Second_section")
+);
 const Home = ({loading}) => {
 
     const navigate = useNavigate();
@@ -32,9 +34,10 @@ const Home = ({loading}) => {
             alt="photo of a very cute jindo dog with his tongue out"
           />
         </div>
-
-        <Second_section />
-        {/* <Third_section /> */}
+        <Suspense fallback={<div>Loading...</div>}>
+          <Second_section />
+        </Suspense>
+        {/* <Second_section /> */}
       </div>
     );
 };
