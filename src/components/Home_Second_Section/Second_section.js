@@ -41,7 +41,6 @@ const Second_section = () => {
                 width="500px"
                 height="auto"
                 alt="small mixed breed dog with ball in his mouth"
-                loading='lazy'
                 rel="preload"
                 as="image"
               />
