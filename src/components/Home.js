@@ -1,7 +1,7 @@
 import React, { lazy, Suspense} from 'react';
 import './home.css'
 import { useNavigate } from 'react-router-dom';
-// import Second_section from './Home_Second_Section/Second_section';
+
 
 const Second_section = lazy(() =>
   import("./Home_Second_Section/Second_section")
@@ -32,7 +32,6 @@ const Home = ({loading}) => {
             width="250px"
             height="auto"
             alt="photo of a very cute jindo dog with his tongue out"
-            loading="lazy"
             rel="preload"
             as="image"
           />
@@ -40,7 +39,6 @@ const Home = ({loading}) => {
         <Suspense fallback={<div>Loading...</div>}>
           <Second_section />
         </Suspense>
-        {/* <Second_section /> */}
       </div>
     );
 };
