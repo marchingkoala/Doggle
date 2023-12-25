@@ -1,7 +1,11 @@
 const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = {
-  plugins: [new CompressionPlugin()],
+  plugins: [
+    new CompressionPlugin({
+      algorithm: 'gzip',
+    })
+  ],
   mode: "development",
   entry: ["./src/index.js"],
   output: {
